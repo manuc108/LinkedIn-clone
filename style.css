@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        body{
+            width: fit-content;
+            margin: auto;
+            background: rgb(235, 235, 235);
+        }
+        header{
+            box-sizing: border-box;
+            padding: 10px 10%;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            background: white;
+            width: 100%;
+            max-width: 1500px;
+        }
+        header i{
+            font-size: 40px;
+            color:#0a66c2;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-family:  'Poppins', sans-serif;
+        
+        }
+        .nav-right{
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-right a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            color: grey;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .nav-right a:hover i,
+        .nav-right a:hover h5 {
+            color: black;
+         }
+        .nav-right h5{
+            margin: 0;
+            text-align: center;
+            font-size: 12px;
+        }
+        .nav-right i{
+            font-size: 1rem;
+            color: grey;
+        }
+        .nav-right p{
+            font-size: 10px;
+            text-align: center;
+            vertical-align: middle;
+            margin: auto 0;
+            cursor: pointer;
+        }
+        .nav-left{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .nav-left .input-box{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            background-color: rgb(237, 245, 246);
+            width: 250px;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+        .input-box input{
+            font-size: 14px;            
+            border: none;
+            background-color: rgb(237, 245, 246);
+            width: 100%;
+            color: black;
+        }
+        .input-box input:focus{
+            outline: none;
+        }
+        .input-box i{
+            font-size: 0.8rem;
+            color: grey;
+        }
+        main{
+            background: rgb(235, 235, 235);
+            padding: 20px 65px;
+            display: grid;
+            grid-template-columns: 250px 700px 350px;
+            font-family:  'Poppins', sans-serif;
+        }
+        .sidebar{
+            width: fit-content;
+            position: sticky;
+        }
+        .profile {
+            background: white;
+            width: 250px;
+            font-family:  'Poppins', sans-serif;
+            border-radius: 20px;
+            box-shadow: 1px 1px grey;
+            margin-top: 60px;
+        } 
+        .profile h1 {
+            font-size: 23px;
+        }
+        .profile p {
+            font-size: 15px;
+        }
+
+        .profile-header{
+            background-color: rgb(82, 92, 105);
+            text-align: center;
+            border-radius: 18px 18px 0px 0px;
+            background-image: url("https://marketplace.canva.com/EAE2cQaUHVA/1/0/1600w/canva-black-minimal-motivation-quote-linkedin-banner-HoRi-2buBWk.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            height: 4.5rem;
+            position: relative;
+            top: 25px;
+        }
+
+        .profile-body p{
+            color: grey;
+        }
+
+        .profile-info {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .profile-info h1 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p{
+            font-size: 14px;
+            margin-top: 0;
+            color: grey;
+        }
+
+        .profile-stats {
+            padding: 5px;
+        }
+
+        .profile-stats p{
+            margin: 10px 0;
+            font-size: 12px;
+        }
+
+        hr {
+            margin: 0;
+        }
+
+        .profile-premium{
+            padding: 5px;
+        }
+
+        .profile-premium p{
+            font-size: 12px;
+            margin: 10px 0;
+        }
+
+        .profile-premium h4{
+            font-size: 15px;
+            margin: 10px 0;
+        }  
+
+        .profile-items {
+            padding: 5px;
+        }
+
+        .profile-items p {
+            font-size: 12px;
+        }
+
+        .metric span{
+            color: blue;
+            float: right;
+        }
+
+        .sidebar-bottom{
+            background: white;
+            width: 250px;
+            font-family:  'Poppins', sans-serif;
+            border-radius: 20px;
+            margin-top: 10px;
+            box-shadow: 1px 1px grey;
+        }
+
+        .groups-and-recent {
+            padding: 15px;
+        }
+
+    
+        .groups-and-recent > div h5{
+            font-size: 12px;
+            margin: 9px 0px;
+        }
+
+        .groups-and-recent > div h4{
+            font-size: 10px;
+            color: grey;
+            margin: 5px;
+        }
+
+        .groups-and-recent > div i{
+            color: rgb(83, 83, 83);
+            font-size: 0.8rem;
+        }
+
+        .icon-container{
+            display: flex;
+            align-items: center;
+            margin-top: 0.7rem;
+            gap: 0.5rem;
+            margin: 0;
+        }
+
+        #group-text{
+            font-size: 13px;
+            color: #0a66c2;
+            margin-top: 25px;
+        }
+
+        .show-more {
+            color: grey;
+            font-size: 11px;
+            margin: 0px 15px;
+            cursor: pointer;
+        }
+
+        .show-more:hover{
+            text-decoration: underline;
+        }
+
+        .events {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 15px;
+            cursor: pointer;
+        }
+
+        .events p{
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .events i{
+            color: rgb(83, 83, 83);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .discover {
+            font-size: 15px;
+            text-align: center;
+            color: gray;
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+        .posts-section{
+            background: rgb(235, 235, 235);
+            margin-top: 60px;
+        }
+
+        .post-head{
+            display: flex;
+            justify-content: space-between;
+        }
+        .post-head img{
+            height: 3rem;
+            width: 3rem;
+        }
+        .post-user{
+            display: flex;
+            gap: 10px;
+        }
+        .post-user p{
+            margin: 0;
+            font-size: 10px;
+            color: grey;
+        }
+        .post-user h6{
+            margin: 0;
+            font-size: 12px;
+        }
+        .post img{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .post p{
+            font-size: 12px;
+            font-weight: 200;
+            color: rgb(54, 54, 54);
+        }
+        .post a:visited{
+            color: blue;
+        }
+        .react{
+            display: flex;
+            justify-content: space-around;
+        }
+        .react div{
+            display: flex;
+            gap: 5px;
+            padding: 10px 5px;
+            align-items: center;
+            margin-top: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+         }
+         .react div p{
+            font-size: 15px;
+            color: grey;
+            margin: 4px;
+         }
+         .react div i{
+            color: grey;
+            font-size: 15px;
+         }
+         .react div:hover{
+            background: rgb(226, 226, 226);
+            color: black;
+         }
+        .posts {
+            background-color: white;
+            height: fit-content;
+            margin: 0px 20px 10px 20px;
+            box-shadow: 1px 1px grey;
+            padding: 15px;     
+            border-radius: 15px;
+        }
+
+        .posts-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .posts-header i{
+            cursor: pointer;
+        }
+         
+        .next-event{
+            padding: 15px;
+        }
+
+        .post-creation {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0px 10px;
+            margin-top: 25px;
+        }
+        .post-creation img{
+            height: 3.5rem;
+            width: 3.5rem;
+            border-radius: 50%;
+        }
+        .post-creation input{
+            padding: 16px 15px;
+            border-radius: 100px;
+            width: 100%;
+        }
+        .btn{
+            background-color: #0a66c2;
+            padding: 10px 15px;
+            width: fit-content;
+            border-radius: 100px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-family:  'Poppins', sans-serif;
+        }
+
+        .btn:hover{
+            background-color: #0a5197;
+        }
+        .post-type{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .type{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            cursor: pointer;
+            padding: 0px 15px;
+            border-radius: 5px;
+        }
+        .type:hover{
+            background-color: rgb(228, 226, 226);
+        }
+        .type:nth-child(1) i{
+            color: #0a66c2;
+        }
+        .type:nth-child(2) i{
+            color: #19c20a;
+        }
+        .type:nth-child(3) i{
+            color: #3187dd;
+        }
+        .type:nth-child(4) i{
+            color: #c20ab9;
+        }
+        .news {
+            background-color: white;
+            height: 400px;
+            font-family:  'Poppins', sans-serif;
+            padding: 13px;
+            border-radius: 20px;
+            box-shadow: 1px 1px grey;
+            margin-top: 60px;
+        }
+
+        .news ul{
+            padding-left: 20px;
+        }
+
+        .news-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .news-header h4{
+            margin: 10px 0px 15px 0px;
+        }
+
+        .news-link {
+            margin: 15px 0px;
+            cursor: pointer;
+        }
+        .news-link h4{
+            font-size: 14px;
+            margin: 0;
+        }
+        .news-link p{
+            font-size: 10px;
+            margin: 2px;
+            color: grey;
+        }
+        .news li:hover{
+            background-color: rgb(227, 227, 227);
+        }
+
+        .news .show-more{
+            font-size: 15px;
+        }
+
+        .chat-container {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 9999;
+            overflow: visible;
+            cursor: pointer;
+        }
+
+        .chat-box {
+            width: 300px;
+            border-radius: 8px;
+            background-color: #f3f6f8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            animation: slideDown 0.3s ease-out forwards;
+            transform-origin: bottom right;
+            overflow: hidden;
+            position: relative;
+            top: 220px;
+        }
+
+        .chat-container:hover .chat-box {
+             animation: slideUp 0.3s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(0%);
+            }
+            100% {
+                transform: translateY(-90%);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(10%);
+            }
+            100% {
+                transform: translateY(-10%);
+            }
+        }
+
+        .chat-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #0073b1;
+        color: #ffffff;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        }
+
+        .chat-header h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        }
+
+        .close-button {
+        border: none;
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        cursor: pointer;
+        }
+
+        
+
+        .chat-card {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #e1e5e8;
+        }
+
+        .profile-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        }
+
+        .chat-content {
+        margin-left: 10px;
+        flex-grow: 1;
+        }
+
+        .sender-name {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+        }
+
+        .chat-message {
+        margin: 0;
+        font-size: 14px;
+        color: #000000;
+        text-overflow: ellipsis;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        }
+
+        .chat-time {
+        margin: 0;
+        font-size: 12px;
+        color: #999999;
+        text-align: right;
+        }
+
+.news {
+    top: 70px;
+    position: sticky;
+}
+
+.sidebar {
+    top: 10px;
+    height: fit-content;
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    .sidebar, .news, .chat-container {
+        display: none;
+    }
+
+    main {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .posts-section {
+        width: 100%;
+    }
+}
+
+/* Existing CSS */
+
+@media (max-width: 600px) {
+    .input-box {
+        width: 15px !important;
+    }
+
+    header {
+        padding: 10px 2%;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    .nav-right {
+        gap: 20px;
+    }
+
+    .nav-right h5 {
+        display: none;
+    }
+
+    .nav-right a i {
+        font-size: 20px;
+    }
+
+    .nav-right a {
+        justify-content: space-around;
+    }
+}
